@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mary Jensen - Personal Page</title>
+
+  <!--
+    ==============================
+    CSS STYLES (All styling here)
+    ==============================
+  -->
+  <style>
+    /* Reset some default browser styles for consistency */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Page background and default text color */
+    body {
+      background: #f6f8fb;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Main container card */
+    .container {
+      background: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      padding: 30px 25px;
+      text-align: center;
+    }
+
+    /* Main heading (name) */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #1f2937;
+    }
+
+    /* Short intro text */
+    .intro {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    /* Facts section layout */
+    .facts {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; /* Space between fact cards */
+    }
+
+    /* Individual fact cards */
+    .fact-card {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 15px 12px;
+      text-align: left;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* Hover effect for cards */
+    .fact-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Fact title styling */
+    .fact-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #111827;
+    }
+
+    /* Fact description text */
+    .fact-text {
+      color: #374151;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive behavior for larger screens */
+    @media (min-width: 600px) {
+      .facts {
+        flex-direction: row;
+      }
+
+      .fact-card {
+        flex: 1;
+      }
+    }
+
+    /* Small footer text */
+    .footer {
+      margin-top: 25px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    ==============================
+    MAIN HTML STRUCTURE
+    ==============================
+  -->
+  <div class="container">
+    <!-- Person's name -->
+    <h1>Mary Jensen</h1>
+
+    <!-- Short introduction -->
+    <p class="intro">
+      Hi! This is a simple personal webpage for <strong>Mary Jensen</strong>, showing a few fun facts
+      in a clean, modern layout.
+    </p>
+
+    <!-- Facts section -->
+    <div class="facts">
+      <div class="fact-card">
+        <div class="fact-title">Fact 1</div>
+        <div class="fact-text">I have 20 pairs of shoes</div>
+      </div>
+
+      <div class="fact-card">
+        <div class="fact-title">Fact 2</div>
+        <div class="fact-text">I don't like dogs anymore</div>
+      </div>
+
+      <div class="fact-card">
+        <div class="fact-title">Fact 3</div>
+        <div class="fact-text">My driver's license is expired</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Personal site • Built with plain HTML, CSS, and JavaScript
+    </div>
+  </div>
+
+  <!--
+    ==============================
+    JAVASCRIPT (Optional behavior)
+    ==============================
+  -->
+  <script>
+    /*
+      This JavaScript is very simple and beginner-friendly.
+      It adds a small console message and could be expanded later.
+    */
+
+    // Run when the page finishes loading
+    window.addEventListener("load", function () {
+      console.log("Mary Jensen's personal page loaded successfully!");
+    });
+  </script>
+</body>
+</html>
